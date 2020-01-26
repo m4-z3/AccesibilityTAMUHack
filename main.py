@@ -17,7 +17,8 @@ def test():
 #function for the bot response
 def get_bot_response():
     userText = request.args.get('msg')
-    return str(englishBot.get_response(userText)
+    return str(englishBot.get_response(userText))
+
 
 if __name__ == "__main__":
     app.run(debug = True)
