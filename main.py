@@ -2,11 +2,11 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/form')
 def test():
     return render_template("index.html")
 
-@app.route('/map') 
+@app.route('/') 
 def mapPage():
     return render_template("map.html")
 
